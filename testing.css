@@ -10,6 +10,8 @@ html,
 body {
   overflow-x: hidden;
   font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  color: #141e30;
 }
 h1 {
   color: #da7294;
@@ -17,6 +19,13 @@ h1 {
   font-size: 5.4rem;
   line-height: 0.94;
   text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #da7294;
+  margin-bottom: 2rem;
 }
 .hero-cursive-font {
   font-family: "Dancing Script", cursive;
@@ -28,17 +37,114 @@ h1 {
 }
 .hero {
   background: #000000;
+  height: 100%;
 }
 .hero-left {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  height: 100vh;
 }
-.button {
-  display: flex;
-  justify-content: flex-start;
-}
+
 .hero-img {
-  text-align: right;
+  display: flex;
+  align-items: right;
+}
+.hero-img img {
+  max-width: 100%;
+}
+.butterfly {
+  position: absolute;
+  top: 38%;
+  left: 84%;
+  width: 100px;
+  height: auto;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .butterfly {
+    top: 30%;
+    left: 93%;
+    width: 80px;
+  }
+  .hero-cursive-font {
+    font-size: 25rem;
+  }
+  h1 {
+    font-size: 4.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .butterfly {
+    top: 32%;
+    left: 75%;
+    width: 70px;
+  }
+  .hero-cursive-font {
+    font-size: 20rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .butterfly {
+    top: 36%;
+    left: 84%;
+    width: 60px;
+  }
+  .hero-cursive-font {
+    font-size: 15rem;
+  }
+  h1 {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .butterfly {
+    top: 39%;
+    left: 75%;
+    width: 50px;
+  }
+  .hero-cursive-font {
+    font-size: 12rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  /* .hero {
+    background: #000000;
+    height: 0;
+  } */
+}
+
+@media (max-width: 400px) {
+  .butterfly {
+    top: 39%;
+    left: 76%;
+    width: 40px;
+  }
+  .hero-cursive-font {
+    font-size: 10rem;
+  }
+  h1 {
+    font-size: 2.6rem;
+  }
+}
+
+.container {
+  padding: 0;
+}
+
+section {
+  margin: 6.2rem 0 0 0;
+}
+
+section:first-of-type {
+  margin: 0;
 }
