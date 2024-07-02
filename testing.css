@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5% !important;
+}
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+}
+h1 {
+  color: #da7294;
+  font-weight: 700;
+  font-size: 5.4rem;
+  line-height: 0.94;
+  text-transform: uppercase;
+}
+.hero-cursive-font {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30rem;
+  text-transform: capitalize;
+}
+.hero {
+  background: #000000;
+}
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  display: flex;
+  justify-content: flex-start;
+}
+.hero-img {
+  text-align: right;
+}
