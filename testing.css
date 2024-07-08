@@ -167,6 +167,18 @@ figcaption {
   color: #525252;
 }
 
+section {
+  margin: 7rem 0 0 0;
+}
+
+.hero {
+  margin: 0;
+}
+
+footer p {
+  font-size: 1.6rem;
+}
+
 /* LG Desktops */
 @media screen and (min-width: 1200px) and (max-width: 1399.98px) {
   .hero-cursive-font {
@@ -276,7 +288,7 @@ figcaption {
     justify-content: center;
   }
   .hero-img img {
-    max-width: 67%;
+    max-width: 73.6%;
   }
   .hr-container hr {
     height: 0.8rem;
@@ -301,130 +313,4 @@ figcaption {
   .songs {
     margin: 4rem 0 0 0;
   }
-}
-
-/* @media (max-width: 768px) {
-  .hero-title {
-    display: flex;
-    align-items: center;
-  }
-  .hero-cursive-font {
-    font-size: 20.5rem;
-    margin-right: -1.9rem;
-  }
-  .butterfly-icon {
-    height: 9rem;
-  }
-  .last-name {
-    font-size: 4.7rem;
-  }
-  .subheading {
-    font-size: 2.6rem;
-  }
-  .hero-left-grouping {
-    margin-left: 1rem;
-  }
-} */
-
-/* @media (max-width: 576px) {
-  .hero-cursive-font {
-    font-size: 16.5rem;
-    margin-right: -1.9rem;
-  }
-  .butterfly-icon {
-    height: 9rem;
-  }
-  .hero-title {
-    justify-content: center;
-  }
-  .hero-left-grouping {
-    margin-left: 3rem;
-    justify-content: center;
-  }
-  .last-name {
-    font-size: 4.2rem;
-  }
-} */
-
-/* Responsive styles */
-/* Phones */
-/* @media (max-width: 575.98px) {
-  .hero-cursive-font {
-    font-size: 15rem;
-    margin-right: -1.5rem;
-  }
-
-  .butterfly-icon {
-    height: 8rem;
-  }
-
-  h1 {
-    font-size: 4rem;
-  }
-
-  .subheading {
-    font-size: 1.8rem;
-  }
-
-  .hero-left-grouping {
-    margin: -1rem 0 0 1rem;
-    gap: 1.7rem;
-  }
-} */
-/* Tablets */
-/* @media (min-width: 576px) and (max-width: 767.98px) {
-  .hero-cursive-font {
-    font-size: 15rem;
-    margin-right: -2.5rem;
-  }
-
-  .butterfly-icon {
-    height: 8rem;
-  }
-
-  h1 {
-    font-size: 4rem;
-  }
-
-  .subheading {
-    font-size: 2rem;
-  }
-
-  .hero-left-grouping {
-    margin-left: 1rem;
-    gap: 2rem;
-  }
-} */
-/* Tablets and Small Laptops */
-/* @media (min-width: 768px) and (max-width: 991.98px) {
-} */
-/* Laptops and Desktops */
-/* @media (min-width: 992px) and (max-width: 1199.98px) {
-} */
-/* Large Desktops */
-/* @media (min-width: 1200px) {
-  .hero-cursive-font {
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 20rem;
-    text-transform: capitalize;
-    margin-right: -2.9rem;
-  }
-}
-section {
-  margin: 6.2rem 0 0 0;
-}
-
-section:first-of-type {
-  margin: 0;
-} */
-
-section {
-  margin: 6.2rem 0 0 0;
-}
-
-section:first-of-type {
-  margin: 0;
 }
