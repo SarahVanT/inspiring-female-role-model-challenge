@@ -53,23 +53,27 @@ h1 {
 .butterfly-icon {
   height: 13rem;
 }
-/* .last-name {
-  
-} */
+.last-name {
+  color: #da7294;
+  font-weight: 700;
+  font-size: 5.4rem;
+  line-height: 0.94;
+  text-transform: uppercase;
+}
 .subheading {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 3rem;
-  /* margin-top: 3.3rem; */
   letter-spacing: 0.2rem;
 }
+
 .hero-left-grouping {
   margin-left: 1.5rem;
-  margin-top: -1.3rem;
+  margin-top: -1.7rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 3rem;
+  gap: 3.5rem;
 }
 
 h2 {
@@ -103,10 +107,7 @@ p {
 
 .hero-img {
   display: flex;
-  justify-content: right;
-}
-.hero-img img {
-  max-width: 100%;
+  /* justify-content: right; */
 }
 
 .hr-container {
@@ -134,11 +135,10 @@ blockquote {
   font-size: 2rem !important;
   font-weight: 700;
   color: #28436e;
-}
-figure {
   margin: 4rem 0;
 }
-figcaption {
+
+cite {
   font-family: "Dancing Script", cursive;
   font-weight: 700;
   font-size: 4.6rem;
@@ -180,11 +180,33 @@ footer p {
   font-size: 1.6rem;
 }
 
+/* Extra Large Desktops */
+@media screen and (min-width: 1555px) and (max-width: 2951px) {
+  .hero-img {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1554px) {
+  .hero-img {
+    justify-content: end;
+  }
+}
+
+/* Extra Large Desktops
+@media screen and (min-width: 1500px) {
+  .hero-img {
+    justify-content: right;
+  }
+} */
+
 /* LG Desktops */
 @media screen and (min-width: 1200px) and (max-width: 1399.98px) {
   .hero-cursive-font {
     font-size: 20rem;
     margin-right: -2.9rem;
+  }
+  .hero-img {
+    justify-content: right;
   }
 }
 
@@ -225,6 +247,9 @@ footer p {
   .hero-cursive-font {
     font-size: 15rem;
     margin-right: -1.5rem;
+  }
+  .hero-img {
+    justify-content: right;
   }
 
   .butterfly-icon {
@@ -269,6 +294,9 @@ footer p {
     padding-top: 3rem;
     margin-bottom: 6rem;
   }
+  .hero-img {
+    justify-content: right;
+  }
 
   .hero-cursive-font {
     font-size: 13rem;
@@ -284,13 +312,13 @@ footer p {
     margin: -0.7rem 0 0 1rem;
     gap: 2.7rem;
   }
-  .hero-img {
+  /* .hero-img {
     display: flex;
     justify-content: center;
   }
   .hero-img img {
     max-width: 73.6%;
-  }
+  } */
   .hr-container hr {
     height: 0.8rem;
   }
