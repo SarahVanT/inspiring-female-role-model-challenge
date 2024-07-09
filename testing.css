@@ -163,11 +163,16 @@ section {
   margin: 7rem 0 0 0;
 }
 
+.quote-block {
+  margin: 7rem 0 0 0;
+}
+
 .hero {
   margin: 0;
 }
 
-footer p {
+footer p,
+li {
   font-size: 1.6rem;
 }
 
@@ -279,6 +284,9 @@ footer p {
     font-size: 15rem;
     margin-right: -1.5rem;
   }
+  .last-name {
+    font-size: 4.4rem;
+  }
   .hero-img {
     justify-content: right;
   }
@@ -369,7 +377,8 @@ footer p {
   .blockquote {
     margin-bottom: 0rem;
   }
-  section {
+  section,
+  .quote-block {
     margin: 5rem 0 0 0;
   }
   .photo-gallery figcaption {
