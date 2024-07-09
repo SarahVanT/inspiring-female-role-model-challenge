@@ -90,24 +90,15 @@ p {
 
 .hero {
   background: #000000;
-  /* background-image: url(background.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #000000; */
-  /* height: 100%; */
 }
+
 .hero-left {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: center;
-  position: relative; */
-  /* height: 100vh; */
 }
 
 .hero-img {
   display: flex;
-  /* justify-content: right; */
 }
 
 .hr-container {
@@ -181,14 +172,26 @@ footer p {
 }
 
 /* Extra Large Desktops */
-@media screen and (min-width: 1555px) and (max-width: 2951px) {
-  .hero-img {
+@media screen and (min-width: 1555px) and (max-width: 2952px) {
+  .hero-left {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: end;
+  }
+  .hero-img {
+    justify-content: start;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1554px) {
   .hero-img {
     justify-content: end;
+  }
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
   }
 }
 
@@ -200,10 +203,16 @@ footer p {
 } */
 
 /* LG Desktops */
-@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+@media screen and (min-width: 1200px) and (max-width: 1399.99px) {
   .hero-cursive-font {
     font-size: 20rem;
     margin-right: -2.9rem;
+  }
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .hero-img {
     justify-content: right;
@@ -215,10 +224,22 @@ footer p {
   .hero-cursive-font {
     font-size: 20rem;
   }
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .hero-cursive-font {
     font-size: 15rem;
     margin-right: -2.5rem;
@@ -244,6 +265,16 @@ footer p {
 
 /* Phones */
 @media screen and (max-width: 767.98px) {
+  .hero {
+    padding-top: 3rem;
+    margin-bottom: 6rem;
+  }
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .hero-cursive-font {
     font-size: 15rem;
     margin-right: -1.5rem;
@@ -293,6 +324,13 @@ footer p {
   .hero {
     padding-top: 3rem;
     margin-bottom: 6rem;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .hero-img {
     justify-content: right;
