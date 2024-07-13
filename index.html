@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dolly Parton</title>
+    <meta
+      name="description"
+      content="Explore the inspiring life of Dolly Parton, legendary singer, songwriter, actress, and philanthropist, and discover her incredible achievements."
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,7 +24,399 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="testing.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5% !important;
+      }
+      html,
+      body {
+        overflow-x: hidden !important;
+      }
+      html,
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 1.8rem;
+        color: #141e30;
+      }
+      .hero {
+        margin-bottom: 8rem;
+      }
+      .hero-cursive-font {
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30rem;
+        text-transform: capitalize;
+      }
+      h1 {
+        color: #da7294;
+        font-weight: 700;
+        font-size: 5.4rem;
+        line-height: 0.94;
+        text-transform: uppercase;
+      }
+
+      .hero-title {
+        display: flex;
+        align-items: center;
+      }
+
+      .hero-cursive-font {
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30rem;
+        text-transform: capitalize;
+        margin-right: -3.9rem;
+      }
+
+      .butterfly-icon {
+        height: 13rem;
+      }
+      .last-name {
+        color: #da7294;
+        font-weight: 700;
+        font-size: 5.4rem;
+        line-height: 0.94;
+        text-transform: uppercase;
+      }
+      .subheading {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+      }
+
+      .hero-left-grouping {
+        margin-left: 1.5rem;
+        margin-top: -1.7rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3.5rem;
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 4rem;
+        color: #da7294;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      .hero {
+        background: #000000;
+      }
+
+      .hero-left {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+      }
+
+      .hero-img {
+        display: flex;
+      }
+
+      .hr-container {
+        position: relative;
+        text-align: center;
+      }
+
+      .hr-container hr {
+        border: none;
+        height: 1rem;
+        background-color: #28436e;
+        opacity: 1;
+        margin: 0;
+      }
+
+      .hr-container img {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        width: 8rem;
+      }
+
+      blockquote {
+        font-size: 2rem !important;
+        font-weight: 700;
+        color: #28436e;
+        margin: 4rem 0;
+      }
+
+      cite {
+        font-family: "Dancing Script", cursive;
+        font-weight: 700;
+        font-size: 4.6rem;
+        color: #da7294;
+      }
+
+      .img-quote {
+        width: 19%;
+      }
+      .photo-gallery {
+        margin: 4rem 0 0 0;
+      }
+
+      .photo-gallery img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+
+      .photo-gallery figcaption {
+        font-family: "Inter", sans-serif;
+        font-size: 1.0125rem;
+        color: #525252;
+      }
+      .photo-gallery a {
+        text-decoration: none;
+        color: #525252;
+      }
+
+      section {
+        margin: 7rem 0 0 0;
+      }
+
+      footer {
+        margin: 8rem 0 0 0;
+        border-top: 1px solid rgba(207, 207, 207, 0.614);
+      }
+
+      .quote-block {
+        margin: 7rem 0 0 0;
+      }
+
+      .hero {
+        margin: 0;
+      }
+
+      footer p,
+      li {
+        font-size: 1.6rem;
+      }
+
+      /* Extra Large Desktops */
+      @media screen and (min-width: 1555px) and (max-width: 2952px) {
+        .hero-left {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: end;
+        }
+        .hero-img {
+          justify-content: start;
+        }
+      }
+      @media screen and (min-width: 1400px) and (max-width: 1554px) {
+        .hero-img {
+          justify-content: end;
+        }
+        .hero-left {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: end;
+        }
+      }
+
+      /* Extra Large Desktops
+      @media screen and (min-width: 1500px) {
+        .hero-img {
+          justify-content: right;
+        }
+      } */
+
+      /* LG Desktops */
+      @media screen and (min-width: 1200px) and (max-width: 1399.99px) {
+        .hero-cursive-font {
+          font-size: 20rem;
+          margin-right: -2.9rem;
+        }
+        .hero-left {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .hero-img {
+          justify-content: right;
+        }
+      }
+
+      /* Desktops */
+      @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+        .hero-cursive-font {
+          font-size: 20rem;
+        }
+        .hero-left {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      /* Tablets */
+      @media screen and (min-width: 768px) and (max-width: 991.98px) {
+        .hero-left {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .hero-cursive-font {
+          font-size: 15rem;
+          margin-right: -2.5rem;
+        }
+
+        .butterfly-icon {
+          height: 8rem;
+        }
+
+        h1 {
+          font-size: 4rem;
+        }
+
+        .subheading {
+          font-size: 2rem;
+        }
+
+        .hero-left-grouping {
+          margin-left: 1rem;
+          gap: 2rem;
+        }
+      }
+
+      /* Phones */
+      @media screen and (max-width: 767.98px) {
+        .hero {
+          padding-top: 3rem;
+          margin-bottom: 6rem;
+        }
+        .hero-left {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .hero-cursive-font {
+          font-size: 15rem;
+          margin-right: -1.5rem;
+        }
+        .last-name {
+          font-size: 4.4rem;
+        }
+        .hero-img {
+          justify-content: right;
+        }
+
+        .butterfly-icon {
+          height: 8rem;
+        }
+
+        h1 {
+          font-size: 4rem;
+        }
+
+        .subheading {
+          font-size: 1.8rem;
+        }
+
+        .hero-left-grouping {
+          margin: -1rem 0 0 1rem;
+          gap: 1.7rem;
+        }
+      }
+      /* Phones */
+      @media screen and (max-width: 425px) {
+        h1 {
+          font-size: 3rem;
+        }
+        h2 {
+          font-size: 3.2rem;
+          margin-bottom: 2rem;
+        }
+        p {
+          font-size: 1.8rem;
+          margin-bottom: 2rem;
+        }
+
+        section p:not(:last-of-type) {
+          margin-bottom: 2rem;
+        }
+
+        section p:last-of-type {
+          margin-bottom: 0;
+        }
+        .hero {
+          padding-top: 3rem;
+          margin-bottom: 6rem;
+        }
+
+        .hero-left {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .hero-img {
+          justify-content: right;
+        }
+
+        .hero-cursive-font {
+          font-size: 13rem;
+          margin-right: -1.5rem;
+        }
+        .butterfly-icon {
+          height: 7rem;
+        }
+        .subheading {
+          font-size: 1.5rem;
+        }
+        .hero-left-grouping {
+          margin: -0.7rem 0 0 1rem;
+          gap: 2.7rem;
+        }
+        .hr-container hr {
+          height: 0.8rem;
+        }
+        .hr-container img {
+          width: 7rem;
+        }
+        figcaption {
+          font-size: 4.1rem;
+        }
+        .blockquote {
+          margin-bottom: 0rem;
+        }
+        section,
+        .quote-block {
+          margin: 5rem 0 0 0;
+        }
+        .photo-gallery figcaption {
+          font-family: "Inter", sans-serif;
+          font-size: 1.1125rem;
+          color: #525252;
+        }
+        .songs {
+          margin: 4rem 0 0 0;
+        }
+      }
+    </style>
   </head>
   <body>
     <main>
@@ -32,7 +428,11 @@
                 <h1 class="hero-cursive-font hero-title">
                   <span>Dolly</span>
                   <!-- Decorative -->
-                  <img src="butterfly.png" alt="" class="butterfly-icon" />
+                  <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/169/original/butterfly.png?1720880172"
+                    alt=""
+                    class="butterfly-icon"
+                  />
                 </h1>
                 <div class="hero-left-grouping">
                   <span class="last-name">Parton</span>
@@ -42,9 +442,7 @@
             </div>
           </div>
 
-          <div
-            class="col-12 col-md-6 col-lg-6 col-12 col-md-6 col-lg-6 hero-img"
-          >
+          <div class="col-12 col-md-6 col-lg-6 hero-img">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/131/259/original/Untitled_%2826%29_1_%281%29.png?1719940328"
               alt="Black-and-white photo of Dolly Parton from 1977, with curly hair, hoop earrings, and a denim shirt."
@@ -60,6 +458,7 @@
           >
             <div class="col-10 col-lg-6">
               <div class="hr-container">
+                <!-- Decorative -->
                 <hr aria-hidden="true" />
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/131/414/original/Heart.png?1720015702"
@@ -75,6 +474,7 @@
                 <cite>- Dolly</cite>
               </blockquote>
               <div class="hr-container">
+                <!-- Decorative -->
                 <hr aria-hidden="true" />
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/131/414/original/Heart.png?1720015702"
@@ -92,15 +492,15 @@
             <h2>Who is Dolly?</h2>
             <p>
               Dolly Parton is a famous American singer, songwriter, actress, and
-              businesswoman. She was born in 1946 in Tennessee and is known for
-              her great voice and popular songs like "Jolene" and "I Will Always
-              Love You." She has also been in movies like "9 to 5" and "Steel
+              businesswoman. She was born in 1946 in Tennessee. She is known for
+              her great voice and songs like "Jolene" and "I Will Always Love
+              You." She has also been in movies like "9 to 5" and "Steel
               Magnolias."
             </p>
             <p>
               Besides being a talented artist, Dolly is also a successful
               businesswoman. She has done well in music publishing, making
-              movies, and even owning a theme park. She also gives back by doing
+              movies, and owning a theme park. She also gives back by doing
               things like the Imagination Library, which gives free books to
               kids. Dolly has made a big impact in many different areas and is
               loved by many people.
@@ -114,7 +514,7 @@
           <div class="col-12 col-lg-4 align-self-stretch">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/131/417/original/image_6.png?1720017415"
-              alt="Black-and-white photo of Dolly Parton with her former musical partner, Porter Wagoner, performing on stage."
+              alt="Black-and-white photo of Dolly Parton with her former musical partner, Porter Wagoner."
               class="img-fluid h-100"
             />
           </div>
@@ -139,13 +539,13 @@
           <div class="col-12 col-md-10 px-4 px-lg-0">
             <h2>Career Highlights</h2>
             <p>
-              Dolly Parton's music career is legendary, with big hits like
-              "Jolene," "I Will Always Love You," and "Coat of Many Colors" that
-              have made her a country music icon. Her albums, such as "Jolene"
-              and "Coat of Many Colors," have been praised by critics and loved
-              by fans. Over the years, Dolly has won many awards, including
-              Grammys and Country Music Association Awards, and she's even in
-              the Country Music Hall of Fame.
+              Dolly Parton's music career is legendary. Big hits like "Jolene,"
+              "I Will Always Love You," and "Coat of Many Colors" have made her
+              a country music icon. Her albums, such as "Jolene" and "Coat of
+              Many Colors," have been praised by critics and loved by fans. Over
+              the years, Dolly has won many awards, including Grammys and
+              Country Music Association Awards. She's even in the Country Music
+              Hall of Fame.
             </p>
             <p>
               Apart from music, Dolly has also made a mark in acting and
@@ -159,8 +559,10 @@
         </div>
 
         <div class="row">
-          <div class="songs d-flex flex-column flex-md-row gap-4 mt-5">
-            <div class="col-12 col-md-6">
+          <div
+            class="songs d-flex flex-column flex-md-row justify-content-center gap-5 mt-5"
+          >
+            <div class="col-12 col-md-5">
               <iframe
                 style="border-radius: 12px; border: none; width: 100%"
                 src="https://open.spotify.com/embed/track/7xWb5uQj7CPVhlfJNnf1lj?utm_source=generator&theme=0"
@@ -171,7 +573,7 @@
               ></iframe>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-5">
               <iframe
                 style="border-radius: 12px; border: none; width: 100%"
                 src="https://open.spotify.com/embed/track/5fdhThPDe6jQQDqCyWrdAn?utm_source=generator&theme=0"
@@ -192,13 +594,13 @@
               Dolly Parton's amazing kindness has had a big impact on
               communities. Her
               <a href="https://imaginationlibrary.com/">Imagination Library</a>
-              has given many kids free books, spreading the joy of reading.
+              has given many kids free books, spreading the joy of reading. The
               Imagination Library has partnered with the American Printing House
-              for the Blind, Inc (APH) to provide many of the books in the
-              program in braille and audio format, making them accessible to
-              young children who are blind or visually impaired. Additionally,
-              her businesses have not only created jobs but also brought
-              positive changes to the communities they're in.
+              for the Blind, Inc (APH). They provide many of the books in
+              braille and audio format, making them accessible to young children
+              who are blind or visually impaired. Additionally, her businesses
+              have not only created jobs but also brought positive changes to
+              the communities they're in.
             </p>
           </div>
         </div>
@@ -224,6 +626,7 @@
           >
             <div class="col-10 col-lg-6">
               <div class="hr-container">
+                <!-- Decorative -->
                 <hr aria-hidden="true" />
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/131/414/original/Heart.png?1720015702"
@@ -239,6 +642,7 @@
               </blockquote>
 
               <div class="hr-container">
+                <!-- Decorative -->
                 <hr aria-hidden="true" />
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/131/414/original/Heart.png?1720015702"
@@ -252,7 +656,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer class="p-4">
       <div class="mb-0">
         <p class="text-center">
           This project was coded with love
@@ -267,7 +671,7 @@
         </p>
       </div>
       <div class="mt-0 d-flex justify-content-center gap-3">
-        <p class="text-center">Image Sources:</p>
+        <p class="text-center">Sources:</p>
         <ul
           class="text-center list-unstyled d-flex gap-3 align-items-center justify-content-center"
         >
